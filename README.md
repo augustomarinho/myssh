@@ -24,3 +24,8 @@ riodejabeiro;192.168.0.1;maquina proxy
 
 ## Descricao das informaçes do arquivo .ssh_machines
 NOME MAQUINA;IP;DESCRICAO LIVRE
+
+## Executando o myssh
+myssh <NOME_USUARIO>
+
+O nome do usuário é opcional, caso não seja informado será capturado o usuário logado.
