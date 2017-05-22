@@ -19,8 +19,8 @@ alias myssh="PATH_MYSSH_LOCAL/myssh.sh"
 source .bashrc
 
 # Exemplo do arquivo .ssh_machines
-acapulco;127.0.01;maquinalocal
-riodejabeiro;192.168.0.1;maquina proxy
+acapulco;127.0.01;maquinalocal  
+riodejaneiro;192.168.0.1;maquina proxy
 
 ## Descricao das informaçes do arquivo .ssh_machines
 NOME MAQUINA;IP;DESCRICAO LIVRE
