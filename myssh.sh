@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SSH_FILE="/home/augustomarinho/.ssh_machines"
-SSH_TEMP_FILE="/home/augustomarinho/.ssh_machines.tmp"
+SSH_FILE="$HOME/.ssh_machines"
+SSH_TEMP_FILE="$HOME/.ssh_machines.tmp"
 MACHINE_NUMBER=1
 MACHINES=${MACHINES:-}
 SELECTION=${SELECTION:-"0"}
