@@ -52,7 +52,7 @@ do
     then    
         #find "$@" -iname "*$in*" $SSH_FILE # ...call find, pass it any parameters given
         #grep -R $in $MACHINES
-
+        limpar_temps
         while IFS='' read -r line || [[ -n "$line" ]]; do
           if echo "$line" | grep -q "$in"; then
               echo $MACHINE_NUMBER") " $line
@@ -66,7 +66,7 @@ done
 
 conectar_ssh () {
   MACHINE=$(sed "${SELECTION}q;d" $SSH_TEMP_FILE | cut -d ';' -f 2)
-  #echo "ssh $USER@"$MACHINE
+  echo "ssh $USER@"$MACHINE
   ssh $USER"@"$MACHINE
 }
 
@@ -85,8 +85,8 @@ esac
 }
 
 limpar_temps () {
-  touch $SSH_TEMP_FILE
   rm $SSH_TEMP_FILE
+  touch $SSH_TEMP_FILE
 }
 
 
